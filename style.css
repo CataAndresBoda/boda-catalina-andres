@@ -1,0 +1,59 @@
+
+body {
+  background: #fff8f3;
+  font-family: 'Georgia', serif;
+  color: #4c3b3b;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #7a5c52;
+  margin: 10px 0;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #8d6e63;
+}
+
+#send-wishes {
+  margin-top: 40px;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #d8a7b1;
+  background-color: #fff0f6;
+}
+
+button {
+  background-color: #cdb4db;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b199c4;
+}
+
+.btn-map {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffc8dd;
+  color: #5a3e36;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-map:hover {
+  background-color: #ffaec9;
+}
