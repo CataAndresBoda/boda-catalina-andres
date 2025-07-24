@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación Boda Catalina & Andrés Felipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #fff8f3;
+      color: #4b3d2a;
+    }
+    header {
+      background: linear-gradient(rgba(255, 244, 232, 0.8), rgba(255, 244, 232, 0.8)), url('https://i.imgur.com/XUhyCzp.jpg');
+      background-size: cover;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+    .contador {
+      font-size: 1.8em;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .galeria {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+    }
+    .galeria img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+    .exclusivo {
+      background: #fff0e8;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .codigo-vestuario {
+      font-style: italic;
+      font-size: 1.1em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Catalina & Andrés Felipe</h1>
+    <p>¡Nos casamos!<br>16 de noviembre de 2025 - 3:00 p.m.</p>
+    <audio autoplay loop controls style="margin-top:20px;">
+      <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+    </audio>
+  </header>
+
+  <section>
+    <h2 style="text-align:center;">Cuenta regresiva</h2>
+    <div class="contador" id="contador"></div>
+
+    <h2>Ubicaciones</h2>
+    <p><strong>Ceremonia:</strong> Parroquia La Purísima Concepción</p>
+    <iframe src="https://www.google.com/maps?q=Parroquia+La+Pur%C3%ADsima+Concepci%C3%B3n,+Colombia&output=embed"></iframe>
+    <p><strong>Recepción:</strong> Hotel Boutique y Eventos Casa Madero</p>
+    <iframe src="https://www.google.com/maps?q=Hotel+Casa+Madero+Colombia&output=embed"></iframe>
+
+    <h2>Galería</h2>
+    <div class="galeria">
+      <img src="https://i.imgur.com/ht9vP8E.jpg" alt="Foto 1">
+      <img src="https://i.imgur.com/EuU0A3F.jpg" alt="Foto 2">
+      <img src="https://i.imgur.com/8bO6ZLz.jpg" alt="Foto 3">
+    </div>
+
+    <h2>Código de vestuario</h2>
+    <p class="codigo-vestuario">Formal elegante – tonos neutros o pasteles. ¡Queremos verte radiante!</p>
+
+    <div class="exclusivo">
+      <p>Esta invitación es personal y está dirigida a:</p>
+      <h3 id="nombre-invitado">[Nombre del invitado]</h3>
+      <p>Agradecemos no extender esta invitación a otras personas para asegurar una experiencia íntima y organizada.</p>
+    </div>
+  </section>
+
+  <script>
+    // Contador regresivo
+    const fechaBoda = new Date("November 16, 2025 15:00:00").getTime();
+    const contador = document.getElementById("contador");
+
+    setInterval(() => {
+      const ahora = new Date().getTime();
+      const diferencia = fechaBoda - ahora;
+
+      const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+      contador.innerHTML = `${dias} días ${horas}h ${minutos}m ${segundos}s`;
+    }, 1000);
+
+    // Nombre del invitado desde URL
+    const params = new URLSearchParams(window.location.search);
+    const nombre = params.get('invitado');
+    if (nombre) {
+      document.getElementById('nombre-invitado').innerText = decodeURIComponent(nombre);
+    }
+  </script>
+</body>
+</html>
