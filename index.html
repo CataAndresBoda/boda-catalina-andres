@@ -2,65 +2,56 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Invitación de Boda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invitación – Catalina & Andrés</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <audio autoplay loop hidden>
-    <source src="musica.mp3" type="audio/mpeg" />
+    <source src="musica.mp3" type="audio/mpeg"/>
   </audio>
 
-  <!-- Encabezado con flores -->
-  <header class="floral-header">
-    <img src="imagenes/flores_superior.png" alt="Flores vintage" class="flor-superior" />
+  <header>
+    <img src="imagenes/flores_top.png" alt="Flores vintage" class="flor-top"/>
     <h1>Catalina Ortega Florez & Andrés Felipe Sossa Sánchez</h1>
-    <p>Invitación para: <span id="nombre-invitado">[Tu Nombre]</span></p>
-    <p>16 de noviembre de 2025</p>
+    <p>Invitación para <strong id="guest-name">[Invitado]</strong></p>
+    <p>16 de noviembre de 2025 · 3:00 p.m.</p>
     <div id="countdown"></div>
   </header>
 
-  <!-- Sección Historia -->
-  <section class="seccion">
+  <section>
+    <img src="imagenes/flores_divider.png" alt="" class="flor-divider"/>
     <h2>Nuestra Historia</h2>
     <div class="carrusel">
-      <img src="imagenes/historia1.jpg" alt="Historia 1" />
-      <img src="imagenes/historia2.jpg" alt="Historia 2" />
-      <img src="imagenes/historia3.jpg" alt="Historia 3" />
+      <img src="imagenes/historia1.jpg" alt="Historia 1"/>
+      <img src="imagenes/historia2.jpg" alt="Historia 2"/>
+      <img src="imagenes/historia3.jpg" alt="Historia 3"/>
     </div>
   </section>
 
-  <!-- Sección Ceremonia -->
-  <section class="seccion">
-    <h2>La Ceremonia</h2>
-    <p>3:00 p.m. - Parroquia La Purísima Concepción</p>
-    <a class="boton" href="https://maps.google.com/?q=Parroquia+La+Purisima+Concepcion" target="_blank">Ver ubicación</a>
+  <section>
+    <img src="imagenes/flores_divider.png" alt="" class="flor-divider"/>
+    <h2>Ceremonia</h2>
+    <p>Parroquia La Purísima Concepción · 3:00 p.m.</p>
+    <a href="https://maps.google.com/?q=Parroquia+La+Purisima+Concepcion" target="_blank" class="boton">Ver ubicación</a>
   </section>
 
-  <!-- Sección Recepción -->
-  <section class="seccion">
+  <section>
+    <img src="imagenes/flores_divider.png" alt="" class="flor-divider"/>
     <h2>Recepción</h2>
-    <p>4:30 p.m. - Hotel Boutique y Eventos Casa Madero</p>
-    <a class="boton" href="https://maps.google.com/?q=Casa+Madero" target="_blank">Ver lugar de la recepción</a>
+    <p>Hotel Boutique Casa Madero · 4:30 p.m. – 8:30 p.m.</p>
+    <a href="https://maps.google.com/?q=Casa+Madero" target="_blank" class="boton">Ver lugar</a>
   </section>
 
-  <!-- Código de vestimenta -->
-  <section class="seccion">
+  <section>
+    <img src="imagenes/flores_divider.png" alt="" class="flor-divider"/>
     <h2>Código de vestimenta</h2>
-    <p>Elegante - Colores pastel recomendados</p>
+    <p>Formal · Colores neutros o pasteles</p>
   </section>
 
-  <!-- Sección de Fotos -->
-  <section class="seccion">
-    <h2>Momentos Juntos</h2>
-    <img src="imagenes/nosotros1.jpeg" class="foto-grande" />
-    <img src="imagenes/nosotros2.jpeg" class="foto-grande" />
-  </section>
-
-  <!-- Pie de página con flores -->
   <footer>
-    <img src="imagenes/flores_inferior.png" alt="Flores vintage" class="flor-inferior" />
-    <p>Gracias por acompañarnos en este día tan especial</p>
+    <img src="imagenes/flores_bottom.png" alt="Flores vintage" class="flor-bottom"/>
+    <p>Con amor, Catalina & Andrés</p>
   </footer>
 
   <script src="script.js"></script>
