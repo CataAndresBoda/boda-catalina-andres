@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+    background-color: #fff8f5;
+    color: #5e5e5e;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #b07a5c;
+}
+.floral-header img, .divider, .floral-footer img {
+    width: 100%;
+}
+.section {
+    padding: 20px;
+}
+.btn {
+    background-color: #e6cfc1;
+    padding: 10px 20px;
+    border: none;
+    color: #5e5e5e;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+.carousel img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}

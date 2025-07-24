@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Invitación – Catalina & Andrés</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Invitación de Boda - Catalina & Andrés</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-  <audio autoplay loop hidden>
-    <source src="musica.mp3" type="audio/mpeg"/>
-  </audio>
+    <audio autoplay loop hidden>
+        <source src="assets/audio/musica.mp3" type="audio/mpeg">
+    </audio>
+    <header class="floral-header">
+        <img src="assets/img/floral_top.png" alt="Decoración Floral Superior">
+        <h1>Estás invitado a la boda de</h1>
+        <h2>Catalina & Andrés</h2>
+        <p id="invitadoPersonalizado"></p>
+    </header>
 
-  <header>
-    <img src="imagenes/flores_top.png" alt="Flores vintage" class="flor-top"/>
-    <h1>Catalina Ortega Florez & Andrés Felipe Sossa Sánchez</h1>
-    <p>Invitación para <strong id="guest-name">[Invitado]</strong></p>
-    <p>16 de noviembre de 2025 · 3:00 p.m.</p>
-    <div id="countdown"></div>
-  </header>
+    <section class="section pastel">
+        <h3>La Ceremonia</h3>
+        <p>Parroquia La Purísima Concepción</p>
+        <p>16 de noviembre de 2025 | 3:00 PM</p>
+        <a href="https://maps.app.goo.gl/QEy9wb5xevq8rLE97" target="_blank" class="btn">Ver ubicación</a>
+    </section>
 
-  <section>
-    <img src="imagenes/flores_divider.png" alt="" class="flor-divider"/>
-    <h2>Nuestra Historia</h2>
-    <div class="carrusel">
-      <img src="imagenes/historia1.jpg" alt="Historia 1"/>
-      <img src="imagenes/historia2.jpg" alt="Historia 2"/>
-      <img src="imagenes/historia3.jpg" alt="Historia 3"/>
-    </div>
-  </section>
+    <img src="assets/img/floral_divider.png" class="divider" alt="Separador Floral">
 
-  <section>
-    <img src="imagenes/flores_divider.png" alt="" class="flor-divider"/>
-    <h2>Ceremonia</h2>
-    <p>Parroquia La Purísima Concepción · 3:00 p.m.</p>
-    <a href="https://maps.google.com/?q=Parroquia+La+Purisima+Concepcion" target="_blank" class="boton">Ver ubicación</a>
-  </section>
+    <section class="section pastel">
+        <h3>Recepción</h3>
+        <p>Hotel Boutique y Eventos Casa Madero</p>
+        <p>16 de noviembre de 2025 | 4:30 PM a 8:30 PM</p>
+        <a href="https://maps.app.goo.gl/xxxxxxxxxx" target="_blank" class="btn">Ver lugar</a>
+    </section>
 
-  <section>
-    <img src="imagenes/flores_divider.png" alt="" class="flor-divider"/>
-    <h2>Recepción</h2>
-    <p>Hotel Boutique Casa Madero · 4:30 p.m. – 8:30 p.m.</p>
-    <a href="https://maps.google.com/?q=Casa+Madero" target="_blank" class="boton">Ver lugar</a>
-  </section>
+    <img src="assets/img/floral_divider.png" class="divider" alt="Separador Floral">
 
-  <section>
-    <img src="imagenes/flores_divider.png" alt="" class="flor-divider"/>
-    <h2>Código de vestimenta</h2>
-    <p>Formal · Colores neutros o pasteles</p>
-  </section>
+    <section class="section pastel">
+        <h3>Galería</h3>
+        <div class="carousel">
+            <img src="assets/img/foto1.jpeg" alt="Foto 1">
+            <img src="assets/img/foto2.jpeg" alt="Foto 2">
+            <img src="assets/img/foto3.jpeg" alt="Foto 3">
+        </div>
+    </section>
 
-  <footer>
-    <img src="imagenes/flores_bottom.png" alt="Flores vintage" class="flor-bottom"/>
-    <p>Con amor, Catalina & Andrés</p>
-  </footer>
+    <img src="assets/img/floral_divider.png" class="divider" alt="Separador Floral">
 
-  <script src="script.js"></script>
+    <section class="section pastel">
+        <h3>Código de Vestimenta</h3>
+        <p>Formal - Colores neutros o pasteles</p>
+    </section>
+
+    <img src="assets/img/floral_divider.png" class="divider" alt="Separador Floral">
+
+    <section class="section pastel">
+        <h3>Nuestra Historia</h3>
+        <p>Desde que nos conocimos, sabíamos que algo especial nos unía...</p>
+    </section>
+
+    <section class="section pastel">
+        <h3>Cuenta Regresiva</h3>
+        <div id="contador"></div>
+    </section>
+
+    <footer class="floral-footer">
+        <img src="assets/img/floral_footer.png" alt="Decoración Floral Inferior">
+        <p>Con amor, Catalina & Andrés</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
