@@ -1,0 +1,61 @@
+
+body {
+  font-family: 'Georgia', serif;
+  background: #fef6f0;
+  color: #4c3b3b;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner h1 {
+  font-size: 2em;
+  color: #b5838d;
+}
+
+.banner p {
+  font-size: 1.2em;
+  color: #6d6875;
+}
+
+.countdown {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #ffb4a2;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.galeria img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.mapa {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #ffc8dd;
+  color: #5a3e36;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.exclusivo {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ffafcc;
+}
+
+.nota {
+  font-size: 0.9em;
+  color: #b5838d;
+}

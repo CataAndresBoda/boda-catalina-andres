@@ -1,36 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Invitación Boda Catalina & Andrés</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invitación de Boda</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <h2>Invitación exclusiva para:</h2>
-    <h1 id="guest-name">[Tu nombre]</h1>
-    <p>Catalina Ortega Florez & Andrés Felipe Sossa Sánchez</p>
+  <div class="banner">
+    <h1>Catalina Ortega Florez & Andrés Felipe Sossa Sánchez</h1>
     <p>16 de noviembre de 2025</p>
-  </header>
+    <p class="exclusivo">Invitación exclusiva para <span id="nombre-invitado">[Nombre del Invitado]</span></p>
+    <p class="nota">Esta invitación es personal e intransferible</p>
+  </div>
 
-  <main>
-    <section id="send-wishes">
-      <h3>Envía tus mejores deseos</h3>
-      <textarea placeholder="Escribe tu mensaje..."></textarea><br />
-      <button>Enviar</button><br />
-      <a href="https://goo.gl/maps/7z4nZbLrLgR2" target="_blank" class="btn btn-map">
-        Ver ubicación de recepción
-      </a>
-    </section>
-  </main>
+  <div class="countdown">
+    <h2>Faltan:</h2>
+    <div id="contador"></div>
+  </div>
 
-  <script>
-    const nombre = new URLSearchParams(window.location.search).get('invitado');
-    if (nombre) {
-      document.getElementById('guest-name').innerText = decodeURIComponent(nombre.replace(/\+/g, ' '));
-    }
-  </script>
+  <div class="galeria">
+    <img src="images/foto_1.jpeg" alt="foto 1" />
+    <img src="images/foto_2.jpeg" alt="foto 2" />
+    <img src="images/foto_3.jpeg" alt="foto 3" />
+  </div>
+
+  <div class="info">
+    <h3>Lugar de la ceremonia</h3>
+    <p>Parroquia La Purísima Concepción</p>
+    <h3>Recepción</h3>
+    <p>Hotel Boutique y Eventos Casa Madero</p>
+    <a href="https://goo.gl/maps/7z4nZbLrLgR2" class="mapa" target="_blank">Ver ubicación</a>
+    <h3>Código de vestuario</h3>
+    <p>Formal - Tonos pastel</p>
+  </div>
+
+  <audio autoplay loop>
+    <source src="musica_fondo.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
