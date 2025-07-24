@@ -9,8 +9,11 @@ body {
 h1, h2, h3 {
     color: #b07a5c;
 }
-.floral-header img, .divider, .floral-footer img {
+.floral-header img, .floral-footer img {
     width: 100%;
+}
+.divider, {
+    width: 20%;
 }
 .section {
     padding: 20px;
