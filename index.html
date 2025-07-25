@@ -1,74 +1,207 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Invitación de Boda - Catalina & Andrés</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación – Catalina & Andrés</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=UnifrakturCook:wght@700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <audio autoplay loop hidden>
-        <source src="assets/audio/musica.mp3" type="audio/mpeg">
-    </audio>
-    <header class="floral-header">
-        <img src="assets/img/floral_top.png" alt="Decoración Floral Superior">
-        <h1>Estás invitado a la boda de</h1>
-        <h2>Catalina & Andrés</h2>
-        <p id="invitadoPersonalizado"></p>
-    </header>
 
-    <section class="section pastel">
-        <h3>La Ceremonia</h3>
-        <p>Parroquia La Purísima Concepción</p>
-        <p>16 de noviembre de 2025 | 3:00 PM</p>
-        <a href="https://www.google.com/maps/place/La+Pur%C3%ADsima+Concepci%C3%B3n+Envigado/@6.1672525,-75.561103,17z/data=!3m1!4b1!4m6!3m5!1s0x8e46836af80f7671:0xfa0f9dcaece25bd!8m2!3d6.1672525!4d-75.561103!16s%2Fg%2F11s0vmmzdh?hl=es&entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn">Ver ubicación</a>
-    </section>
+  <header>
+    <div class="play-container">
+      <span>Dale play para escuchar nuestra canción</span>
+      <div class="play-button" onclick="document.getElementById('cancion').play()">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </div>
+    </div>
+    <!-- Audio -->
+    <audio id="cancion" src="music/y_si_te_quedas_que.mp3"></audio>
 
-    <img src="assets/img/floral_divider.png" class="divider" alt="Separador Floral">
+    <!-- <h1>Catalina Ortega Florez & Andrés Felipe Sossa Sánchez</h1>
+    <p>Invitación para <strong id="guest-name">[Invitado]</strong></p>
+    <p>16 de noviembre de 2025 · 3:00 p.m.</p>
+    <div id="countdown"></div> -->
+  </header>
 
-    <section class="section pastel">
-        <h3>Recepción</h3>
-        <p>Hotel Boutique y Eventos Casa Madero</p>
-        <p>16 de noviembre de 2025 | 4:30 PM a 8:30 PM</p>
-        <a href="https://www.google.com/maps/place/Casa+Madero+Hotel/@6.1738967,-75.5597959,17z/data=!3m1!4b1!4m9!3m8!1s0x8e4682e402dbe0d7:0xb81a4549419b2b8c!5m2!4m1!1i2!8m2!3d6.1738967!4d-75.5597959!16s%2Fg%2F11hdsb3smv?hl=es&entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn">Ver lugar</a>
-    </section>
+  <section>
+    <div class="newspaper-header">
+      <div class="left">
+        Catalina Ortega <br> & Andres Sossa
+      </div>
+      <div class="center">
+        Noticia de última hora
+      </div>
+      <div class="right">
+        Domingo, <br> 16 de Noviembre 2025
+      </div>
+    </div>
+  </section>
 
-    <img src="assets/img/floral_divider.png" class="divider" alt="Separador Floral">
+  <section>
+    <div class="we-are-getting-married">
+      <h1>NOS CASAMOS</h1>
+      <div class="date">
+        <span class="hearts">♥♥</span>
+        DOMINGO, 16 NOVIEMBRE 2025
+        <span class="hearts">♥♥</span>
+      </div>
+    </div>
+  </section>
 
-    <section class="section pastel">
-        <h3>Galería</h3>
-        <div class="carousel">
-            <img src="assets/img/foto1.jpeg" alt="Foto 1">
-            <img src="assets/img/foto2.jpeg" alt="Foto 2">
-            <img src="assets/img/foto3.jpeg" alt="Foto 3">
+  <section>
+    <div class="flechados-section fade-in-up">
+      <img src="img/foto_flechados.jpeg" alt="Foto de los novios">
+      <div class="flechados-header">
+        <div class="line-top"></div>
+        <h2>CATALINA & ANDRES</h2>
+        <div class="subtitle-line">
+          <span class="line"></span>
+          <span class="subtitle">Han sido flechados</span>
+          <span class="line"></span>
         </div>
-    </section>
+        <!-- <div class="line-bottom"></div> -->
+      </div>
+      <p>
+        Con gran alegría, nos complace anunciar que hemos decidido unir nuestras vidas en matrimonio.
+        Este día especial es el comienzo de un nuevo capítulo en nuestra historia, un capítulo que queremos escribir
+        junto a ustedes,
+        nuestros amigos y familiares más queridos.
+      </p>
+    </div>
+  </section>
 
-    <img src="assets/img/floral_divider.png" class="divider" alt="Separador Floral">
+  <section class="blessing-section">
+    <h2 class="blessing-title">CON LA BENDICIÓN DE NUESTROS PADRES</h2>
 
-    <section class="section pastel">
-        <h3>Código de Vestimenta</h3>
-        <p>Formal - Colores neutros o pasteles</p>
-    </section>
+    <div class="parents-container">
+      <div class="parents-block">
+        <h3 class="parents-label"><em>PADRES DEL NOVIO</em></h3>
+        <p>Luis Alfonso Sosa Urrego<br>Alba Rocio Sánchez Sánchez</p>
+      </div>
 
-    <img src="assets/img/floral_divider.png" class="divider" alt="Separador Floral">
+      <div class="heart-divider">
+        <span class="heart">♥</span>
+      </div>
 
-    <section class="section pastel">
-        <h3>Nuestra Historia</h3>
-        <p>Desde que nos conocimos, sabíamos que algo especial nos unía...</p>
-    </section>
+      <div class="parents-block">
+        <h3 class="parents-label"><em>PADRES DE LA NOVIA</em></h3>
+        <p>Jorge Humberto Ortega Córdoba<br>Lucelly Florez Giraldo</p>
+      </div>
+    </div>
 
-    <section class="section pastel">
-        <h3>Cuenta Regresiva</h3>
-        <div id="contador"></div>
-    </section>
+    <div class="godparents-section">
+      <p class="ampersand">&</p>
+      <h3 class="godparents-label"><em>NUESTROS PADRINOS DE HONOR</em></h3>
+      <p>Luis Alfonso Sosa Urrego<br>Alba Rocio Sánchez Sánchez</p>
+    </div>
+  </section>
 
-    <footer class="floral-footer">
-        <img src="assets/img/floral_footer.png" alt="Decoración Floral Inferior">
-        <p>Con amor, Catalina & Andrés</p>
-    </footer>
+  <section class="wedding-announcement">
+    <h2 class="announcement-title fade-in-right hiddenFadeInRight">¡LLEGA LA BODA MÁS ESPERADA!</h2>
+    <div class="double-line-separator"></div>
+    <img src="img/foto_boda_andres_cata_noche.jpeg" alt="Foto boda noche" class="announcement-photo">
+    <!--div class="announcement-line"></div-->
+  </section>
 
-    <script src="assets/js/script.js"></script>
+  <section>
+    <div class="section-our-history">
+      <div class="line"></div>
+      <h2>Nuestra Historia</h2>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <section class="nuestra-historia">
+    <div class="historia-texto">
+      <p>
+        Nos conocimos en el trabajo, sin imaginar que entre reuniones, tareas y refrigerios apurados
+        encontraríamos algo mucho más importante: el uno al otro... Desde aquel 2 de enero del 2019
+        hemos reído, madurado, llorado un poquito (pero siempre juntos), y aprendimos que el amor
+        verdadero se construye día a día.<br><br>
+        Poco a poco empezamos a crecer emocionalmente hasta que "¡Llegó el capítulo más emocionante!
+        ¡Nos casamos!" y porque en algún momento fuiste cómplice de una risa, un consejo, un abrazo o
+        una anécdota, tú también eres parte de esta historia, es por eso que estás cordialmente invitado/a
+        a celebrar con nosotros este día tan especial.
+      </p>
+    </div>
+
+    <div class="historia-imagenes">
+      <img src="img/foto1.jpeg" alt="Foto 1">
+      <img src="img/foto2.jpeg" alt="Foto 2">
+      <!--img src="img/foto3.jpeg" alt="Foto 3"-->
+    </div>
+  </section>
+
+  <section>
+    <div class="section-our-history">
+      <div class="line"></div>
+      <h2>Programa de Boda</h2>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <section>
+    <P>Aca va la información del programa de boda</P>
+  </section>
+
+  <section>
+    <p class="blessing-title-ninos">Amamos a los niños, pero creemos que esta noche
+      se merecen disfrutar solos como pareja, por eso en esta ocasión será
+      solo para adultos.
+    </p>
+  </section>
+
+  <section>
+    Información Dress Code
+  </section>
+
+  <section>
+    Sugerencia de Regalo
+  </section>
+
+  <section>
+    <div class="section-our-history">
+      <div class="line"></div>
+      <h2>Faltan</h2>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <section>
+    <img src="imagenes/flores_divider.png" alt="" class="flor-divider" />
+    <h2>Ceremonia</h2>
+    <p>Parroquia La Purísima Concepción · 3:00 p.m.</p>
+    <a href="https://maps.google.com/?q=Parroquia+La+Purisima+Concepcion" target="_blank" class="boton">Ver
+      ubicación</a>
+  </section>
+
+  <section>
+    Cuenta Regresiva
+  </section>
+
+  <section>
+    Parte final
+  </section>
+
+  <section>
+    <img src="imagenes/flores_divider.png" alt="" class="flor-divider" />
+    <h2>Recepción</h2>
+    <p>Hotel Boutique Casa Madero · 4:30 p.m. – 8:30 p.m.</p>
+    <a href="https://maps.google.com/?q=Casa+Madero" target="_blank" class="boton">Ver lugar</a>
+  </section>
+
+  <footer>
+    <p>Con amor, Catalina & Andrés</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

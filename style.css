@@ -1,0 +1,412 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff8f3;
+    font-family: 'Georgia', cursive;
+    color: #5c4a4a;
+    text-align: center;
+}
+
+/*
+header,
+section,
+footer {
+    padding: 20px;
+}
+
+.flor-top,
+.flor-divider,
+.flor-bottom {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.flor-divider {
+    margin: 30px 0;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #a57164;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #8d5a5a;
+    margin-bottom: 15px;
+}
+*/
+
+.play-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #f6f1ed;
+    border-radius: 8px;
+    padding: 12px 16px;
+    max-width: 400px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.play-container span {
+    font-size: 18px;
+    color: #333;
+}
+
+.play-button {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: #e0d5cd;
+}
+
+.play-button svg {
+    width: 16px;
+    height: 16px;
+    fill: #555;
+}
+
+/* Encabezado tipo periódico */
+.newspaper-header {
+    border-top: 3px double #000;
+    border-bottom: 3px double #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.newspaper-header .left,
+.newspaper-header .right {
+    width: 25%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.newspaper-header .center {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 28px;
+    text-align: center;
+    width: 50%;
+}
+
+/* NOS CASAMOS */
+.we-are-getting-married {
+    text-align: center;
+    margin: 30px 20px 0 20px;
+}
+
+.we-are-getting-married h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.we-are-getting-married .date {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+}
+
+.hearts {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #000;
+}
+
+/* Sección de flechados */
+.flechados-section {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.flechados-section img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    margin-top: 30px;
+}
+
+.flechados-header {
+    margin-bottom: 20px;
+}
+
+.flechados-header .line-top,
+.flechados-header .line-bottom {
+    height: 1px;
+    background-color: black;
+    margin: 0 auto 10px auto;
+    width: 90%;
+}
+
+.flechados-header h2 {
+    font-size: 28px;
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+.subtitle-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.subtitle-line .line {
+    flex: 1;
+    height: 1px;
+    background-color: black;
+    margin: 0 10px;
+}
+
+.subtitle-line .subtitle {
+    font-family: 'Great Vibes', cursive;
+    font-size: 24px;
+    white-space: nowrap;
+    color: #000;
+}
+
+.flechados-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 20px 10px 0 10px;
+}
+
+/* Con la bendicion de nuestros padres*/
+.blessing-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+.blessing-title {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.blessing-title-ninos {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.parents-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.parents-block {
+    min-width: 160px;
+}
+
+.parents-label,
+.godparents-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.heart-divider {
+    font-size: 20px;
+    line-height: 40px;
+    color: black;
+}
+
+.heart {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.godparents-section {
+    margin-top: 20px;
+}
+
+.ampersand {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Anuncio de la boda más esperada*/
+.wedding-announcement {
+    text-align: center;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+.announcement-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.announcement-line {
+    height: 2px;
+    width: 100px;
+    background-color: black;
+    margin: 10px auto 20px;
+}
+
+.announcement-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.double-line-separator {
+    width: 90%;
+    /* ajusta según tu diseño, 400px si lo quieres exacto */
+    max-width: 400px;
+    height: 8px;
+    /* altura total del contenedor */
+    margin: 20px auto;
+    background: linear-gradient(to bottom,
+            black 1px,
+            transparent 1px,
+            transparent 4px,
+            rgba(0, 0, 0, 0.2) 4px,
+            rgba(0, 0, 0, 0.2) 5px,
+            transparent 5px,
+            transparent 8px);
+}
+
+/* Nuestra Historia*/
+.section-our-history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.section-our-history .line {
+  flex: 1;
+  height: 1px;
+  background-color: #000;
+  margin: 0 15px;
+  max-width: 100px;
+}
+
+.section-our-history h2 {
+  font-family: 'Great Vibes', cursive; /* o una fuente similar */
+  font-size: 2rem;
+  font-weight: normal;
+  color: #333;
+  white-space: nowrap;
+}
+
+.nuestra-historia {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 60px 0;
+  padding: 0 20px;
+}
+
+.historia-texto {
+  max-width: 400px;
+  text-align: justify;
+  font-family: 'Times New Roman', serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #000;
+}
+
+.historia-imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.historia-imagenes img {
+  width: 180px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.hiddenFadeInRight {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.fade-in-right.show {
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(50px);
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.fade-in-right {
+    opacity:1;
+    transform: translateX(0px);
+}
