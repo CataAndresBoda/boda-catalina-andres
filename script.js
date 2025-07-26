@@ -1,24 +1,32 @@
 // Nombre personalizado
 const params = new URLSearchParams(window.location.search);
 const name = params.get("invitado");
+const fechaBoda = new Date("2025-11-16T15:00:00-05:00");
 if (name) document.getElementById("guest-name").innerText = decodeURIComponent(name.replace(/\+/g, " "));
 
 // Contador regresivo
-const target = new Date("2025-11-16T15:00:00").getTime();
-function updateCountdown() {
-    const now = Date.now(), diff = target - now;
-    let text = "¡Hoy es el gran día!";
-    if (diff > 0) {
-        const d = Math.floor(diff / 864e5),
-            h = Math.floor(diff % 864e5 / 36e5),
-            m = Math.floor(diff % 36e5 / 6e4),
-            s = Math.floor(diff % 6e4 / 1e3);
-        text = `Faltan ${d}d ${h}h ${m}m ${s}s`;
+function actualizarContador() {
+    const ahora = new Date();
+    const diferencia = fechaBoda - ahora;
+
+    if (diferencia <= 0) {
+        document.getElementById("countdown-section").innerHTML = "<h2 style='text-align:center;'>¡Hoy es el gran día!</h2>";
+        return;
     }
-    document.getElementById("countdown").innerText = text;
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+    const segundos = Math.floor((diferencia / 1000) % 60);
+
+    document.getElementById("dias").textContent = String(dias).padStart(2, '0');
+    document.getElementById("horas").textContent = String(horas).padStart(2, '0');
+    document.getElementById("minutos").textContent = String(minutos).padStart(2, '0');
+    document.getElementById("segundos").textContent = String(segundos).padStart(2, '0');
 }
-setInterval(updateCountdown, 1000);
-updateCountdown();
+
+actualizarContador();
+setInterval(actualizarContador, 1000);
 
 /* Animación */
 const observer = new IntersectionObserver((entries) => {

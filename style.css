@@ -372,9 +372,145 @@ h2 {
   object-fit: cover;
 }
 
+/*Programa Boda*/
+.programa-boda {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 60px auto;
+  font-family: 'Georgia', serif;
+}
+
+.bloques-programa {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+}
+
+.bloque-evento {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.bloque-evento h3 {
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.bloque-evento p {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.btn-mapa {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #ccc;
+  color: #000;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-mapa:hover {
+  background-color: #bbb;
+}
+
+.linea-tiempo {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid #aaa;
+}
+
+.evento-linea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.evento-linea .hora {
+  font-weight: bold;
+  width: 80px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.evento-linea img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.evento-linea .descripcion {
+  font-size: 0.95rem;
+  color: #444;
+}
+
 .hiddenFadeInRight {
     opacity: 0;
     transform: translateX(50px);
+}
+
+/*Dress Code*/
+.dress-code {
+  border: 1px solid #333;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fdfafa;
+  font-family: 'Georgia', serif;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dress-code .divider {
+  border: none;
+  border-top: 1px solid #999;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.dress-code .title {
+  font-style: italic;
+  font-size: 24px;
+  margin: 0;
+}
+
+.dress-code .subtitle {
+  margin: 5px 0 20px 0;
+  font-size: 16px;
+}
+
+.dress-code .icons img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.dress-code .text p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.dress-code .note {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #555;
 }
 
 .fade-in-right.show {

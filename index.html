@@ -135,7 +135,7 @@
     <div class="historia-imagenes">
       <img src="img/foto1.jpeg" alt="Foto 1">
       <img src="img/foto2.jpeg" alt="Foto 2">
-      <img src="img/foto3.jpeg" alt="Foto 3">
+      <!--img src="img/foto3.jpeg" alt="Foto 3"-->
     </div>
   </section>
 
@@ -147,8 +147,53 @@
     </div>
   </section>
 
-  <section>
-    <P>Aca va la información del programa de boda</P>
+  <section class="programa-boda">
+    <div class="bloques-programa">
+      <div class="bloque-evento">
+        <h3>Ceremonia Religiosa</h3>
+        <p><strong>Hora 03:00 pm</strong><br>
+          “Parroquia La Purisima Concepción”<br>
+          Envigado</p>
+        <a href="https://maps.google.com/?q=Parroquia+La+Purisima+Concepcion" class="btn-mapa" target="_blank"
+          rel="noopener noreferrer">Ver mapa</a>
+      </div>
+
+      <div class="bloque-evento">
+        <h3>Recepción</h3>
+        <p><strong>Hora 04:30 pm</strong><br>
+          “Hotel Boutique Casa Madero”<br>
+          Envigado</p>
+        <a href="https://maps.google.com/?q=Casa+Madero" class="btn-mapa" target="_blank" rel="noopener noreferrer">Ver mapa</a>
+      </div>
+    </div>
+
+    <div class="linea-tiempo">
+      <div class="evento-linea">
+        <span class="hora">05:00 pm</span>
+        <img src="img/icono-iglesia.png" alt="Iglesia">
+        <span class="descripcion">Ceremonia Religiosa</span>
+      </div>
+      <div class="evento-linea">
+        <span class="hora">07:00 pm</span>
+        <img src="img/icono-anillo.png" alt="Recepción">
+        <span class="descripcion">Recepción</span>
+      </div>
+      <div class="evento-linea">
+        <span class="hora">08:00 pm</span>
+        <img src="img/icono-vals.png" alt="Vals">
+        <span class="descripcion">Vals</span>
+      </div>
+      <div class="evento-linea">
+        <span class="hora">08:30 pm</span>
+        <img src="img/icono-cena.png" alt="Cena">
+        <span class="descripcion">Cena</span>
+      </div>
+      <div class="evento-linea">
+        <span class="hora">09:30 pm</span>
+        <img src="img/icono-fiesta.png" alt="Fiesta">
+        <span class="descripcion">Fiesta</span>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -158,8 +203,17 @@
     </p>
   </section>
 
-  <section>
-    Información Dress Code
+  <section class="dress-code">
+    <hr class="divider" />
+    <h2 class="title">Dress code</h2>
+    <p class="subtitle"><strong>Elegante - Formal</strong></p>
+    <div class="icons">
+      <img src="img/icono-dama-caballero-dress-code.png" alt="Dress code icon" />
+    </div>
+    <div class="text">
+      <p><strong>Ellas:</strong> Vestido largo &nbsp;&nbsp;&nbsp;&nbsp; <strong>Ellos:</strong> Traje y corbata</p>
+      <p class="note"><em>(Se reserva el color blanco para la Novia)</em></p>
+    </div>
   </section>
 
   <section>
@@ -174,17 +228,25 @@
     </div>
   </section>
 
-  <section>
-    <img src="imagenes/flores_divider.png" alt="" class="flor-divider" />
-    <h2>Ceremonia</h2>
-    <p>Parroquia La Purísima Concepción · 3:00 p.m.</p>
-    <a href="https://maps.google.com/?q=Parroquia+La+Purisima+Concepcion" target="_blank" class="boton">Ver
-      ubicación</a>
+  <section id="countdown-section" style="display: flex; justify-content: center; padding: 2rem 0;">
+    <div style="border: 1px solid #000; padding: 2rem 3rem; background-color: white; text-align: center;">
+      <div
+        style="display: flex; justify-content: center; gap: 1rem; font-family: Georgia, serif; font-size: 3.5rem; font-weight: 500;">
+        <span id="dias">00</span> :
+        <span id="horas">00</span> :
+        <span id="minutos">00</span> :
+        <span id="segundos">00</span>
+      </div>
+      <div
+        style="margin-top: 1rem; font-family: Georgia, serif; font-size: 1rem; letter-spacing: 1px; display: flex; justify-content: center; gap: 3.2rem;">
+        <span>DÍAS</span>
+        <span>HORAS</span>
+        <span>MINUTOS</span>
+        <span>SEGUNDOS</span>
+      </div>
+    </div>
   </section>
 
-  <section>
-    Cuenta Regresiva
-  </section>
 
   <section>
     Parte final
